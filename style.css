@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* Navigation */
+nav {
+    background: #111827;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #60a5fa;
+}
+
+/* Home */
+.home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #dbeafe, #f5f3ff);
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #2563eb;
+}
+
+.home h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #111827;
+}
+
+/* About */
+.about-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.about-box p {
+    margin-bottom: 15px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    width: 220px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.skill-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    margin: 5px;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}
+
+/* Achievements */
+.achievement-box {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.achievement-box li {
+    margin: 12px;
+}
+
+/* Certifications */
+.certificate-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.certificate-card {
+    background: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.certificate-card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+/* Contact */
+.contact-box {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-box p {
+    margin: 15px;
+}
+
+.contact-box a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home h2 {
+        font-size: 19px;
+    }
+
+    .home p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .skill-card,
+    .project-card,
+    .certificate-card {
+        width: 100%;
+    }
+}
